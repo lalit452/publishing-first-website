@@ -10,7 +10,7 @@ function App() {
 
   useEffect(()=>{
     // axios.get(backend_url)
-    axios.get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/jokes`)
+    axios.get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}api/jokes`)
     // axios.get('/api/jokes') 
     .then((response) => {
       setJokes(response.data)
