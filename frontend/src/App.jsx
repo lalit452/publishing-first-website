@@ -5,10 +5,12 @@ import axios from 'axios'
 
 function App() {
   const [jokes, setJokes] = useState([]);
-const backend_url = import.meta.env.VITE_BACKEND_URL;
+// const backend_url = import.meta.env.VITE_BACKEND_URL;
+
 
   useEffect(()=>{
-    axios.get(backend_url)
+    // axios.get(backend_url)
+    axios.get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/jokes`)
     // axios.get('/api/jokes') 
     .then((response) => {
       setJokes(response.data)
