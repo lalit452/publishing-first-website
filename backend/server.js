@@ -45,3 +45,5 @@ app.listen(port, ()=>{
     console.log(`Server at http://localhost:${port}`);
 }
 );
+
+export default app;
