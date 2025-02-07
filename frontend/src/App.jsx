@@ -23,7 +23,7 @@ function App() {
   const backend_url = import.meta.env.VITE_BACKEND_URL;
 
 useEffect(() => {
-  axios.get(`${backend_url}api/jokes`)  // ✅ Correct API URL
+  axios.get(`${backend_url}/api/jokes`)  // ✅ Correct API URL
     .then(response => {
       setJokes(response.data);
     })
